@@ -2,10 +2,22 @@
   "name": "van_tan_app",
   "private": true,
   "dependencies": {
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "turbolinks": "^5.2.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/actioncable": "^6.0.0"
+    "webpack": "^5.50.0"
   },
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "babel": {
+    "presets": [
+      "./node_modules/@rails/webpacker/package/babel/preset.js"
+    ]
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "webpack-cli": "^4.7.2"
+  }
 }
